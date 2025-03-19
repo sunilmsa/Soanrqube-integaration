@@ -26,7 +26,7 @@ steps:
     SonarQube: 'Sonarqube_Test'
     organization: 'Test_Organization'
     scannerMode: 'dotnet'
-    projectKey: 'test-organization098'
+    projectKey: 'Test_Organization_display'
     projectName: 'Test_Organization_display'
 
 - task: VSBuild@1
