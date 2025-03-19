@@ -27,8 +27,8 @@ steps:
     SonarQube: 'sonarcloud'
     organization: 'sunilmsa01'
     scannerMode: 'dotnet'
-    projectKey: 'sunilmsa01'
-    projectName: 'sunilmsa01'
+    projectKey: 'Soanrqube-integaration.git'
+    projectName: 'Soanrqube-integaration.git'
 
 - task: VSBuild@1
   inputs:
