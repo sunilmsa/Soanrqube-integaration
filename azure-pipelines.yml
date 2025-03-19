@@ -22,13 +22,6 @@ steps:
     restoreSolution: '$(solution)'
 
 
-- task: SonarCloudPrepare@3
-  inputs:
-    organization: 'sunilmsa01'
-    scannerMode: 'dotnet'
-    projectKey: 'sunilmsa01_sonarqube-testing'
-    projectName: 'sonarqube_testing'
-
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
@@ -36,14 +29,6 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-
-- task: SonarCloudAnalyze@3
-  inputs:
-    jdkversion: 'JAVA_HOME_17_X64'
-
-- task: SonarCloudPublish@3
-  inputs:
-    pollingTimeoutSec: '300'
 
 
 
