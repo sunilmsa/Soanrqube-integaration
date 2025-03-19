@@ -24,11 +24,10 @@ steps:
 
 - task: SonarCloudPrepare@3
   inputs:
-    SonarQube: 'sonarcloud'
     organization: 'sunilmsa01'
     scannerMode: 'dotnet'
-    projectKey: 'Soanrqube-integaration.git'
-    projectName: 'Soanrqube-integaration.git'
+    projectKey: 'sunilmsa01_sonarqube-testing'
+    projectName: 'sonarqube_testing'
 
 - task: VSBuild@1
   inputs:
