@@ -24,9 +24,9 @@ steps:
 - task: SonarCloudPrepare@3
   inputs:
     SonarQube: 'Sonarqube_Test'
-    organization: 'test-organization098'
+    organization: 'Test_Organization'
     scannerMode: 'dotnet'
-    projectKey: 'Test_Organization_display'
+    projectKey: 'test-organization098'
     projectName: 'Test_Organization_display'
 
 - task: VSBuild@1
